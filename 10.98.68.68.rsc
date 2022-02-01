@@ -1,1 +1,1 @@
-/ip ipsec proposal add name=bot enc-algorithms=aes-128-cbc lifetime=1h auth-algorithms=sha1 pfs-group=modp1024
+/ip ipsec proposal add name="bot" hash-algorithm=sha1 enc-algorithm=aes-128,3des dh-group=modp2048,modp1024 lifetime=1d proposal-check=obey nat-traversal=yes dpd-interval=2m dpd-maximum-failures=5
